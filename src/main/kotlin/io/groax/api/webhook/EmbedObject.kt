@@ -2,10 +2,7 @@ package io.groax.api.webhook
 
 import java.awt.Color
 
-import lombok.*
 
-@Getter
-@Setter
 class EmbedObject {
     var title: String? = null
         private set

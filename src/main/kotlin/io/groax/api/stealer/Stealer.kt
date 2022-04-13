@@ -1,4 +1,4 @@
-package io.groax.api
+package io.groax.api.stealer
 
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser

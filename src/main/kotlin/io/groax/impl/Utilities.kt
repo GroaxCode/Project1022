@@ -1,7 +1,7 @@
 package io.groax.impl
 
 import com.google.common.io.BaseEncoding
-import io.groax.api.Util
+import io.groax.api.util.Util
 import java.io.ByteArrayOutputStream
 import java.io.DataInputStream
 import java.io.File
